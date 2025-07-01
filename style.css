@@ -1,53 +1,67 @@
 /* Styles globaux */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    background-color: #ffffff4d;
-    color: #333333;
+    background-color: #121212;
+    color: #000000;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-image: url('A_professional,_subtle_background_image_for_a_port.png'); /* Lien vers l'image de fond */
-    background-size: cover; /* Couvre toute la page */
-    background-position: center center; /* Centre l'image */
-    background-attachment: fixed; /* Fixe l'image lors du défilement */
+    font-size: 1.2em;
+    background-image: url('A_professional,_subtle_background_image_for_a_port.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
-/* Mise en forme des titres */
-h1, h2{
+h1, h2 {
     font-family: 'Roboto', sans-serif;
-    color: #005B9F; /* Bleu du CV */
+    color: #005B9F;
     text-align: center;
     margin: 0;
     padding: 10px 0;
 }
 
-h2, h3 {
+h2.title {
+    color: #ffffff !important;
+}
+
+h2{
     margin-top: 40px;
     text-align: center;
 }
 
-/* Ajout du bandeau bleu derrière chaque titre de section */
+h3 {
+    font-size: 25px !important;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    color: #000000;
+}
+
 section h2 {
-    background-color: #333; /* Couleur noire pour le bandeau */
+    background-color: #333;
     color: #428bc3;
     padding: 15px;
     margin: 0;
 }
 
-/* Section avec fond blanc et bordure bleue */
 section {
     background-color: rgba(255, 255, 255, 0.547);
-    border: 3px solid #005B9F; /* Bordure bleue */
+    border: 3px solid #005B9F;
     padding: 20px;
-    margin-top: 20px;
     margin: 5px;
-    border-radius: 8px; /* Bords arrondis pour un effet plus moderne */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour effet de profondeur */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header avec fond bleu */
 header {
-    background-color: #005B9F; /* Bleu du CV */
+    background-color: #005B9F;
     padding: 20px 0;
     text-align: center;
 }
@@ -67,209 +81,89 @@ header nav ul li a {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    
 }
 
-/* Mise en forme de la section accueil */
-#accueil-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.navbar {
+    background-color: #005B9F !important;
 }
 
-#accueil-text {
-    flex: 1;
-    padding-right: 20px;
-    font-size: 1.2rem;
-    color: #333;
-    text-align: justify;
-    line-height: 1.8;
+.navbar .navbar-start {
+    margin-left: 5%;
 }
 
-#accueil-diplome {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.navbar .navbar-item {
+    color: white !important;
+    margin-right: 3%;
 }
 
-#accueil-diplome img {
-    width: 60%;
-    height: auto;
-    border: 2px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.navbar .navbar-item:hover {
+    background-color: #003f6f !important;
 }
 
-#accueil-diplome img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Container pour le CV avec une disposition en flexbox */
-#cv-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Container pour le texte du CV */
-#cv-text {
-    flex: 1;
-    padding-right: 20px;
-    font-size: 1.2rem;
-    color: #333;
-    text-align: justify;
-}
-
-/* Box pour les logos à droite */
-#logos-box {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux logos de passer à la ligne suivante */
-    justify-content: space-between; /* Ajoute de l'espace entre les logos */
-    gap: 20px; /* Ajoute de l'espace entre les logos */
-    width: 40%; /* Largeur fixe pour la box */
-    height: auto;
-    padding: 10px;
-    border: 2px solid #005B9F; /* Bordure bleue autour de la box */
-    border-radius: 8px; /* Bords arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
-}
-
-/* Chaque logo dans la box */
-#logos-box .logo-item {
-    display: flex;
-    justify-content: center; /* Centre les logos horizontalement */
-    align-items: center; /* Centre les logos verticalement */
-}
-
-/* Taille des logos */
-#logos-box img {
-    width: 100%; /* Largeur des logos en pourcentage */
-    height: auto; /* Hauteur automatique pour maintenir les proportions */
-    max-width: 200px; /* Limite la taille des logos */
-    object-fit: contain; /* Garde les proportions sans découper l'image */
+.image-custom-align img {
     transition: transform 0.3s ease;
-    background-color: transparent; /* Assure que l'image n'a pas de fond */
+    border: 3px solid #000000;
+    border-radius: 8px;
 }
 
-/* Effet au survol */
-#logos-box img:hover {
-    transform: scale(1.1); /* Effet de zoom sur les logos */
-}
-
-/* Lorsque l'écran est plus petit, les logos s'ajustent dans une seule colonne */
-@media (max-width: 768px) {
-    #logos-box {
-        justify-content: center; /* Centre les logos sur mobile */
-    }
-
-    #logos-box img {
-        width: 80px; /* Réduit la taille des logos pour les petits écrans */
-        height: 80px;
-    }
+.image-custom-align:hover img {
+    transform: scale(1.05);
 }
 
 
-/* Style pour la section des projets */
-#projets {
-    padding: 40px;
-    text-align: center;
+.columns.is-multiline.is-mobile img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%; /* Largeur de la boîte contenant les projets */
-    overflow: hidden; /* Cache les projets qui dépassent */
-    margin: auto;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease; /* Ajoute une transition fluide */
+.columns.is-multiline.is-mobile img:hover {
+    transform: scale(1.1);
 }
 
 .project-box {
-    min-width: 75%; /* Largeur de chaque boîte projet */
-    margin: 5%; /* Espacement entre les projets */
+    min-width: 75%;
+    margin: 5%;
     padding: 20px;
     background-color: #fff;
-    border: 2px solid #005B9F; /* Bordure bleue */
+    border: 2px solid #005B9F;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: justify;
     align-items: center;
-    opacity: 0.6; /* Réduit l'opacité pour les projets non visibles */
+    opacity: 0.6;
     transition: opacity 0.3s ease;
 }
 
-/* Effet pour montrer le projet actif */
 .project-box.active {
-    opacity: 1; /* Met à pleine opacité le projet visible */
+    opacity: 1;
 }
 
-/* Flèches de navigation */
-.carousel-btn {
-    background-color: #005B9F;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 10;
-}
-
-#prev {
-    left: 10px;
-}
-
-#next {
-    right: 10px;
-}
-
-.iframe-container {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-}
-
-#syrie_fiche {
-    border: none; /* Supprime les bordures de l'iframe */
-    width: 70%; /* Ajuste la largeur de l'iframe */
-    height: 600px; /* Ajuste la hauteur de l'iframe */
-    margin-left: 15%;
-}
-
-
-/* Lorsque l'écran est plus petit, les projets sont ajustés pour s'adapter */
 @media (max-width: 768px) {
     .project-box {
-        min-width: 80%; /* Réduit la largeur des projets sur mobile */
+        min-width: 80%;
     }
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+footer.footer {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    color: #000000;
 }
 
-footer p {
-    margin: 0;
+.footer .credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Media Queries pour rendre la page responsive sur mobile */
+.footer .credits img {
+    height: 20px;
+    margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
     #accueil-container {
         flex-direction: column;
@@ -296,26 +190,6 @@ footer p {
         margin-top: 20px;
     }
 }
-#logos-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 30%;
-    margin :auto;
-    border: 5px solid #005B9F;
-    border-radius: 8px;
-}
-
-
-
-#logos-box img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
 
 #logos-box-project {
     display: flex;
@@ -338,7 +212,7 @@ footer p {
 }
 
 #logos-box-project img {
-    width: 100%;    
+    width: 100%;
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -358,11 +232,10 @@ footer p {
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease, font-size 0.3s ease, padding 0.3s ease;
     z-index: 2;
-    pointer-events: none; /* Pour ne pas bloquer le hover */
+    pointer-events: none;
     border-radius: 0 0 8px 8px;
     width: 96%;
 }
-
 
 #logos-box-project .logo-item:hover {
     transform: scale(1.1);
@@ -370,57 +243,41 @@ footer p {
 
 #logos-box-project .logo-item:hover .title-overlay {
     opacity: 1;
-    transform: translateY(-5px); /* Optionnel : petit effet dynamique */
+    transform: translateY(-5px);
 }
 
-
-.project-details {
-    display: none;
-    margin-top: 20px;
-    text-align: justify;
-}   
-
-.project-details:target {
-    display: block;
-}
-
-/* Style pour la modale */
 .modal {
-    display: none; /* Cachée par défaut */
+    display: none;
     position: fixed;
-    z-index: 1; /* Assure que la modale soit au-dessus du reste du contenu */
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Prend toute la largeur */
-    height: 100%; /* Prend toute la hauteur */
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    overflow: hidden; /* Empêche les barres de défilement verticales */
-    padding-top: 10px; /* Réduit l'espace supérieur pour qu'elle occupe plus d'espace en haut de la page */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding-top: 10px;
 }
 
-/* Contenu de la modale */
 .modal-content {
     background-color: #fff;
-    margin: 0 auto; /* Supprime la marge par défaut pour utiliser toute la largeur disponible */
-    padding: 40px; /* Augmentez la valeur du padding pour ajouter plus d'espace intérieur */
+    margin: 0 auto;
+    padding: 40px;
     border: 4px solid #005B9F;
     border-radius: 8px;
-    width: 80%; /* Réduit la largeur de la modale à 80% */
-    max-width: 900px; /* Largeur maximale de la modale */
-    max-height: 95vh; /* Hauteur maximale de la modale */
-    overflow-y: auto; /* Permet de défiler si le contenu est trop grand */
-    box-sizing: border-box; /* Inclut les padding dans la largeur/hauteur */
+    width: 80%;
+    max-width: 900px;
+    max-height: 95vh;
+    overflow-y: auto;
+    box-sizing: border-box;
     position: relative;
 }
 
-
-
-/* Bouton de fermeture (la croix) */
 .close {
     color: #aaa;
     position: absolute;
     top: 10px;
-    right: 10px; /* Positionne la croix en haut à droite */
+    right: 10px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -432,7 +289,6 @@ footer p {
     text-decoration: none;
 }
 
-/* Contenu du projet dans la modale */
 #project-details {
     text-align: justify;
     line-height: 1.6;
@@ -441,7 +297,17 @@ footer p {
     overflow-wrap: break-word;
 }
 
-/* Option pour empêcher l'apparition des barres de défilement à droite */
-body {
-    overflow-x: hidden; /* Empêche le défilement horizontal sur toute la page */
+.box.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.image-custom-align img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
 }

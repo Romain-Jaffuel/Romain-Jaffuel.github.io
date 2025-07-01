@@ -1,158 +1,197 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="accueil">
-        <div id="accueil-container">
-            <div id="accueil-text">
-                <p>Bonjour, je m'appelle <strong>Romain Jaffuel</strong>, étudiant actuellement dans le cadre d'un Double Diplôme entre Sciences Po Saint-Germain-en-Laye et CY Tech, où je me spécialise en Data et Humanités Digitales. Passionné par l'innovation, la géopolitique et les technologies, j'ai acquis des compétences variées à travers mes études, ainsi que plusieurs expériences professionnelles et associatives.</p>
-                <p>Mon parcours me permet de naviguer entre le domaine des sciences sociales et des technologies avancées, offrant ainsi une vision complète des enjeux contemporains, notamment en géopolitique et dans le domaine de l'intelligence artificielle. Dans ce portfolio, vous trouverez un aperçu de mon parcours, de mes compétences et de mes projets réalisés. N'hésitez pas à explorer les différentes sections pour en savoir plus.</p>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-menu is-active">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#home">Home</a>
+                <a class="navbar-item" href="#cv">Resume</a>
+                <a class="navbar-item" href="#projects">Projects</a>
+                <a class="navbar-item" href="#contact">Contact</a>
             </div>
-            <div id="accueil-diplome">
-                <img src="A_professional_certificate_or_diploma_for_a_double.png" alt="Diplôme Double Diplôme Sciences Po / CY Tech" />
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-8-desktop is-7-tablet">
+                    <h3 class="title">Bio</h3>
+                    <div class="content">
+                        <p>I'm a student in a dual-degree program between Sciences Po Saint-Germain-en-Laye and CY Tech, combining political science, data science and computer engineering.</p>
+                        <p>Passionate about innovation, geopolitics, and technology, I work at the intersection of social sciences and technical disciplines.</p>
+                        <p>This background gives me a broad understanding of contemporary challenges and the tools to analyze them critically. My main focus is on global security linked with AI. I am particularly interested in real-world applications, from analysing military drone trajectories to exploring informational war mechanisms.</p>
+                        <p>This portfolio is a snapshot of my learning journey.</p><br>
+
+                    </div>
+                </div>
+                <div class="column is-4-desktop is-5-tablet image-custom-align">
+                    <figure class="image image-custom-align">
+                        <a href="https://www.sciencespo-saintgermainenlaye.fr/formations/double-diplome-ingenieur-data-et-humanites-digitales/" target="_blank">
+                            <img src="Plaquette-Double-Diplome-2025-26.jpg" alt="Dual Degree Diploma">
+                        </a>
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
-    
 
-    <section id="cv">
-        <h2>Mon CV</h2>
-        <div id="cv-container">
-            <div id="cv-text">
-                <ul>
-                    <li><strong>Formation :</strong> <a href="https://www.sciencespo-saintgermainenlaye.fr/wp-content/uploads/2025/01/Plaquette-Double-Diplome.pdf" target="_blank">Plaquette du Double Diplôme</a></li>
-                    <li><strong>Baccalauréat Général </strong>– Mention Bien</li>
-                </ul>
-                <h3>Expériences :</h3>
-                <ul>
-                    <li><strong>Stage à l’Etat-Major de Zone de Défense de Paris</strong>
-                    </li>
-                    <li><strong>Associatif :</strong>
-                        <ul>
-                            <li>Président de l'association ONU à Sciences Po</li>
-                            <li>Rédacteur pour l’OERI (Observatoire Étudiant des Relations Internationales)</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h3>Compétences :</h3>
-                <ul>
-                    <li><strong>Langues : </strong>Français, Anglais, Espagnol</li>
-                    <li>Pack Office, Python, R, SQL, Java</li>
-                    <li>Esprit d’analyse, capacités rédactionnelles, polyvalence, humilité</li>
-                </ul>
-                <h3>Intérêts :</h3>
-                <ul>
-                    <li>Géopolitique, Relations Internationales, Environnement</li>
-                    <li>Sport : Natation, Ultimate</li>
-                </ul>
-            </div>
-            <div id="logos-box">
-                <div class="logo-item">
-                    <img src="Logo EMZD-P.png" alt="EMZD Logo" />
+    <section id="cv" class="section">
+        <div class="container">
+            <h2 class="title">Resume</h2>
+            <div class="columns">
+                <div class="column is-two-thirds">
+
+                    <h3>Education</h3>
+                    <p>I am currently enrolled in a dual degree program between Sciences Po Saint-Germain-en-Laye and CY Tech, combining political science and computer engineering. You can find more details in the <a href="https://www.sciencespo-saintgermainenlaye.fr/wp-content/uploads/2025/01/Plaquette-Double-Diplome.pdf" target="_blank">official brochure</a>. I also graduated from high school with honors.</p>
+
+                    <h3>Experiences</h3>
+                    <p>I completed an internship at the Defense Headquarters of the Paris Region, gaining insight into military organization and strategic planning. As part of my involvement in student associations, I served as President of the Model United Nations Club at Sciences Po, and contributed as a writer for the Student Observatory for International Relations (OERI).</p>
+
+                    <h3>Skills</h3>
+                    <p>I speak French (C2), English (C1), and Spanish (B1). I have technical experience with tools and languages such as Python, R, Kepler.gl, HuggingFace and Office Suite.</p>
+
+                    <h3>Interests</h3>
+                    <p>My academic interests include geopolitics, international relations, AI innovation and environmental issues. Outside of academics, I enjoy swimming and playing ultimate frisbee.</p>
                 </div>
-                <div class="logo-item">
-                    <img src="logo MUN.JPG" alt="MUN Logo" />
-                </div>
-                <div class="logo-item">
-                    <img src="Logo OERI.jpeg" alt="OERI Logo" />
-                </div>
-                <div class="logo-item">
-                    <img src="Logo R.png" alt="R Logo" />
-                </div>
-                <div class="logo-item">
-                    <img src="Logo Python.png" alt="Python Logo" />
-                </div>
-                <div class="logo-item">
-                    <img src="Logo SQL.png" alt="SQL Logo" />
+                <div class="column">
+                    <div class="columns is-multiline is-mobile">
+                        <div class="column is-one-third"><img src="Logo Python.png" alt="Python Logo"></div>
+                        <div class="column is-one-third"><img src="Logo ScikitLearn.png" alt="Scikit-learn Logo"></div>
+                        <div class="column is-one-third"><img src="Logo Pytorch.png" alt="Pytorch Logo"></div>
+                        <div class="column is-one-third"><img src="Logo R.png" alt="R Logo"></div>
+                        <div class="column is-one-third"><img src="Logo Overleaf.png" alt="Overleaf Logo"></div>
+                        <div class="column is-one-third"><img src="Logo Kepler.png" alt="Kpler Logo"></div>
+                        <div class="column is-one-third"><img src="Logo ML.png" alt="ML Logo"></div>
+                        <div class="column is-one-third"><img src="Logo RNN.png" alt="RNN Logo"></div>
+                        <div class="column is-one-third"><img src="Logo Hugging Face.png" alt="Hugging Face Logo"></div>
+                        <div class="column is-one-third"><img src="Logo EMZD-P.png" alt="EMZD Logo"></div>
+                        <div class="column is-one-third"><img src="Logo OERI.png" alt="OERI Logo"></div>
+                        <div class="column is-one-third"><img src="logo MUN.JPG" alt="MUN Logo"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     
-    <section id="projets">
-        <h2>Mes Projets</h2>
-        <div id="logos-box-project">
-            <div class="logo-item">
-                <a href="#projet1" class="logo-link">
-                    <img src="Logo Syrie.png" alt="Fiche Syrie Logo">
-                    <div class="title-overlay">Projet 1: Fiche sur la Guerre Civile Syrienne</div>
-                </a>
+    <section id="projects" class="section"> 
+        <div class="container">
+            <h2 class="title">Projects</h2>
+            <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="box project-card" onclick="showProject('projet1')">
+                <figure class="image is-square">
+                    <img src="Logo Syrie.png" alt="Project 1">
+                </figure>
+                <p class="has-text-centered">Syria Civil War Analysis</p>
+                </div>
             </div>
-            <div class="logo-item">
-                <a href="#projet2" class="logo-link">
-                    <img src="Logo UA.png" alt="Ukraine Project Logo">
-                    <div class="title-overlay">Projet 2: Machine Learning appliqué à la classification de drone en Ukraine</div>
-                </a>
+
+            <div class="column is-one-third">
+                <div class="box project-card" onclick="showProject('projet2')">
+                <figure class="image is-square">
+                    <img src="Logo UA.png" alt="Project 2">
+                </figure>
+                <p class="has-text-centered">Drone Classification in Ukraine</p>
+                </div>
             </div>
-            <div class="logo-item">
-                <a href="#projet3" class="logo-link">
-                    <img src="Logo Stats.png" alt="Stats Report Logo">
-                    <div class="title-overlay">Projet 3: Statistiques sur les plateforme d'apprentissage en ligne</div>
-                </a>
+
+            <div class="column is-one-third">
+                <div class="box project-card" onclick="showProject('projet3')">
+                <figure class="image is-square">
+                    <img src="Logo Stats.png" alt="Project 3">
+                </figure>
+                <p class="has-text-centered">Engagement in Online Learning Platforms</p>
+                </div>
+            </div>
+
             </div>
         </div>
-    
-        <!-- Sections de projet maintenant cachées, mais utilisées dans la modale -->
-        <div id="projet1" class="project-details" style="display: none;">
-            <h3>Projet 1: Fiche sur la Guerre Civile Syrienne (Février 2024)</h3>
-            <p>La guerre civile syrienne, qui a commencé en 2011, est l'un des conflits les plus complexes du 21e siècle. Ce projet explore les causes profondes du conflit, en mettant en lumière la répression d'un régime autoritaire, les luttes de pouvoir internes et les interventions extérieures. À travers une analyse détaillée des principaux acteurs, comme le régime de Bachar al-Assad, les rebelles, et les groupes djihadistes, la fiche offre une vue d'ensemble des dynamiques géopolitiques qui ont façonné le pays. Ce projet se distingue en analysant également les aspects humanitaires de la guerre, avec des millions de réfugiés et des milliers de victimes civiles. L'impact de la guerre sur la région et les relations internationales est aussi un point essentiel, en particulier en ce qui concerne les tensions avec les puissances mondiales. Alors que la Syrie reste un carrefour stratégique au Moyen-Orient, ce projet permet de comprendre les enjeux sous-jacents qui continuent de déstabiliser la région.</p>
+
+        <div id="projet1" class="modal">
+            <div class="modal-background" onclick="closeProject('projet1')"></div>
+            <div class="modal-content box">
+            <h3 class="title">Project 1: Syria Civil War Analysis (February 2024)</h3>
+            <p>The Syrian civil war, which began in 2011, is one of the most complex conflicts of the 21st century. This project written in French explores the deep-rooted causes of the conflict, highlighting the repression of an authoritarian regime, internal power struggles, and foreign interventions. It includes a detailed analysis of key actors such as the Assad regime, rebel groups, and jihadist factions. The war’s impact on the region and international relations is central, especially regarding tensions with global powers. As Syria remains a strategic crossroads in the Middle East, this project aims to clarify the underlying dynamics that continue to destabilize the region.</p>
             <iframe src="syrie_fiche.pdf" width="100%" height="600px"></iframe>
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet1')"></button>
         </div>
-        <div id="projet2" class="project-details" style="display: none;">
-            <h3>Projet 2: Machine Learning appliqué à la classification de drone en Ukraine (Avril 2024)</h3>
-            <p>Dans un contexte de guerre moderne, l’utilisation de drones militaires en Ukraine est devenue un enjeu majeur. Ce projet se concentre sur l'application du Machine Learning pour classifier différents types de drones, qu'ils soient utilisés pour des missions de reconnaissance ou comme armes de destruction. La capacité à différencier ces drones en temps réel permet de mieux contrer les stratégies militaires ennemies. Le projet a commencé par une phase OSINT qui nous a permis de récupérer les coordonnées des bases russes, ainsi que les caractéristiques des différents modèles de drones russes et ukrainiens. L'algorithme (Random Forest) permet ensuite de classifier correctement 1000 trajectoires de drone générés aléatoirement. Ce travail s’inscrit dans une évolution technologique rapide, où l'IA et le Machine Learning modifient la donne dans les conflits modernes. Découvrez les résultats de ce projet dans la présentation ci-dessous :</p>
+
+        <div id="projet2" class="modal">
+            <div class="modal-background" onclick="closeProject('projet2')"></div>
+            <div class="modal-content box">
+            <h3 class="title">Project 2: Drone Classification in Ukraine using Machine Learning (April 2024)</h3>
+            <p>In the context of modern warfare, the use of military drones in Ukraine has become a major strategic issue. This project focuses on applying machine learning to classify different types of drones, whether for reconnaissance or as attack weapons. Real-time classification enhances the ability to respond to enemy strategies. The project began with an OSINT phase to gather coordinates of Russian bases and technical specifications of drones. A Random Forest model was trained to classify 1000 simulated drone trajectories. This work contributes to the broader transformation of warfare through AI and automation. The full results are presented in the document below:</p>
             <iframe src="ProjetUA.pdf" width="100%" height="600px"></iframe>
+            <a href="https://github.com/AEI-Andraf/Portfolio/tree/76d3b550f0b0ad7fe7d5ddfd3e9d65b82a0d0ba4/ClassificationDroneUA" target="_blank">View full project on GitHub</a>
+            </div>
         </div>
-        <div id="projet3" class="project-details" style="display: none;">
-            <h3>Projet 3: Statistiques (Juin 2024)</h3>
-            <p>Cette étude s'est focalisée sur l'analyse des comportements d'engagement des apprenants dans des MOOCs, en examinant l'influence des facteurs sociodémographiques, tels que le genre et l'indice de développement humain (IDH). L'objectif principal était d'identifier les déterminants majeurs de l'engagement, mesuré par le nombre de vidéos visionnées et les quiz réalisés. Les données utilisées provenaient de trois itérations d'un MOOC, collectées sous forme de logs d'activité et de réponses à des enquêtes. Une approche quantitative a été adoptée, incluant des tests de Student et des régressions logistiques pour évaluer les effets principaux et les interactions entre variables. Les résultats ont montré que le IDH a un effet significatif sur le nombre de vidéos visionnées, avec une augmentation progressive associée à des contextes plus favorables. En revanche, le genre n'a pas présenté d'effet significatif. Ces résultats suggèrent que les disparités d'engagement sont davantage influencées par les contextes socio-économiques que par les différences liées au genre. Ces observations soulignent la nécessité de concevoir des interventions éducatives adaptées aux besoins spécifiques des apprenants provenant de contextes moins favorisés.</p>
+
+        <div id="projet3" class="modal">
+            <div class="modal-background" onclick="closeProject('projet3')"></div>
+            <div class="modal-content box">
+            <h3 class="title">Project 3: Online Learning Statistics (June 2024)</h3>
+            <p>This study analyzed learner engagement in MOOCs, focusing on the influence of sociodemographic factors like gender and Human Development Index (HDI). The goal was to identify major determinants of engagement, measured by the number of videos watched and quizzes completed. Data came from three MOOC editions, including activity logs and survey responses. The quantitative approach used t-tests and logistic regressions to evaluate main effects and interactions. Results showed a strong positive correlation between HDI and video engagement. Gender had no significant effect. These findings suggest that socio-economic context plays a larger role in learner behavior than gender, highlighting the importance of targeted interventions for underserved learners.</p>
             <iframe src="Rendu_IMRAD_Stats.pdf" width="100%" height="600px"></iframe>
-            <a href="https://github.com/AEI-Andraf/Portfolio/tree/803b979d0c0dd7402382b366268a2de7071ff661/Statistiques%20MOOC" target="_blank">Voir le projet complet</a>
-        </div>
-    </section>
-    
-
-    <section id="contact">
-        <h2>Contact</h2>
-    
-        <!-- Ajout des logos avec les liens cliquables -->
-        <div class="social-links">
-            <a href="https://github.com/AEI-Andraf" target="_blank">
-                <img src="Logo Github.png" style="width: auto; height: 50px; margin: 10px;">
-            </a>
-            <a href="https://linkedin.com/in/romain-jaffuel" target="_blank">
-                <img src="Logo Linkedin.png" style="width: auto; height: 50px; margin: 10px;">
-            </a>
+            <a href="https://github.com/AEI-Andraf/Portfolio/tree/803b979d0c0dd7402382b366268a2de7071ff661/Statistiques%20MOOC" target="_blank">View full project on GitHub</a>
+            </div>
         </div>
     </section>
 
-    <!-- Modale de projet -->
-<div id="project-modal" class="modal">
-    <div class="modal-content">
-        <span id="close-modal" class="close">&times;</span>
-        <div id="project-details"></div> <!-- Détails du projet à afficher ici -->
-    </div>
-</div>
-
     
-    <script src="script.js"></script>
 
+ <section id="contact" class="section">
+        <div class="container">
+            <h2 class="title">Contact</h2>
+            <div class="buttons">
+                <a href="https://github.com/AEI-Andraf" class="button is-dark" target="_blank">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/romain-jaffuel" class="button is-link" target="_blank">
+                    <span class="icon"><i class="fab fa-linkedin"></i></span>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="content">
+                <p>Email: romain.jaffuel.1@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered credits">
+            <p>
+            This page was created by Romain Jaffuel using <a href="https://bulma.io/" target="_blank">Bulma</a>,
+            <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, and custom HTML/CSS.
+            </p>
+            <p>
+            Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+            </p>
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+            <img src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="Creative Commons License">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function showProject(id) {
+            document.getElementById(id).classList.add('is-active');
+        }
+        function closeProject(id) {
+            document.getElementById(id).classList.remove('is-active');
+        }
+    </script>
 </body>
+</html>
