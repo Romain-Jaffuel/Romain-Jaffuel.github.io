@@ -144,25 +144,25 @@ header nav ul li a {
     }
 }
 
-footer {
+footer.footer {
     background-color: #005B9F;
     color: white;
-}
-
-footer.footer {
     font-size: 0.8rem;
-    margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: 2rem;
 }
 
-.footer .credits {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer.footer a {
+    color: white;
+    text-decoration: underline;
 }
 
-.footer .credits img {
+footer.footer a:hover {
+    color: #b3d9ff; /* Optionnel : effet hover plus clair */
+}
+
+footer.footer img {
     height: 20px;
     margin-top: 0.5rem;
 }
