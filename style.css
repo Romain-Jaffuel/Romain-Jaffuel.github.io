@@ -144,13 +144,16 @@ header nav ul li a {
     }
 }
 
+footer {
+    background-color: #005B9F;
+    color: white;
+}
+
 footer.footer {
     font-size: 0.8rem;
     margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #005B9F;
-    color: white;
 }
 
 .footer .credits {
