@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Romain Jaffuel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -88,33 +88,59 @@
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="columns is-multiline">
-            <div class="column is-one-third">
-                <div class="box project-card" onclick="showProject('projet1')">
-                <figure class="image is-square">
-                    <img src="Logo Syrie.png" alt="Project 1">
-                </figure>
-                <p class="has-text-centered">Syria Civil War Analysis</p>
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet1')">
+                    <figure class="image is-square">
+                        <img src="Logo Syrie.png" alt="Project 1">
+                    </figure>
+                    <p class="has-text-centered">Syria Civil War Analysis</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="column is-one-third">
-                <div class="box project-card" onclick="showProject('projet2')">
-                <figure class="image is-square">
-                    <img src="Logo UA.png" alt="Project 2">
-                </figure>
-                <p class="has-text-centered">Drone Classification in Ukraine</p>
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet2')">
+                    <figure class="image is-square">
+                        <img src="Logo UA.png" alt="Project 2">
+                    </figure>
+                    <p class="has-text-centered">Drone Classification in Ukraine</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="column is-one-third">
-                <div class="box project-card" onclick="showProject('projet3')">
-                <figure class="image is-square">
-                    <img src="Logo Stats.png" alt="Project 3">
-                </figure>
-                <p class="has-text-centered">Engagement in Online Learning Platforms</p>
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet3')">
+                    <figure class="image is-square">
+                        <img src="Logo Stats.png" alt="Project 3">
+                    </figure>
+                    <p class="has-text-centered">Engagement in Online Learning Platforms</p>
+                    </div>
                 </div>
-            </div>
 
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet4')">
+                        <figure class="image is-square">
+                            <img src="logo_snake.png" alt="Snake AI">
+                        </figure>
+                        <p class="has-text-centered">Snake AI with Reinforcement Learning</p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet5')">
+                        <figure class="image is-square">
+                            <img src="logo_aircraft.png" alt="Military Aircraft Detection">
+                        </figure>
+                        <p class="has-text-centered">Military Aircraft Detection</p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet6')">
+                        <figure class="image is-square">
+                            <img src="logo_isr2strike.png" alt="ISR2Strike Replay">
+                        </figure>
+                        <p class="has-text-centered">ISR2Strike Replay</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -147,9 +173,34 @@
             <a href="https://github.com/AEI-Andraf/Portfolio/tree/803b979d0c0dd7402382b366268a2de7071ff661/Statistiques%20MOOC" target="_blank">View full project on GitHub</a>
             </div>
         </div>
-    </section>
 
-    
+        <div id="projet4" class="modal">
+            <div class="modal-background" onclick="closeProject('projet4')"></div>
+            <div class="modal-content box">
+                <h3 class="title">Snake AI with Reinforcement Learning</h3>
+                <p>This project implements a Deep Q-Learning agent to play Snake autonomously, with features like memory replay, epsilon-greedy exploration, and training visualization. It includes optional video recording of the training process.</p>
+                <a href="https://github.com/Romain-Jaffuel/Snake-AI" target="_blank">View full project on GitHub</a>
+            </div>
+        </div>
+
+        <div id="projet5" class="modal">
+            <div class="modal-background" onclick="closeProject('projet5')"></div>
+            <div class="modal-content box">
+                <h3 class="title">Military Aircraft Detection</h3>
+                <p>Deep learning object detection model (YOLOv8) trained on military aircraft datasets to identify and locate various aircraft types in images and videos.</p>
+                <a href="https://github.com/Romain-Jaffuel/Military-Aircraft-Detection" target="_blank">View full project on GitHub</a>
+            </div>
+        </div>
+
+        <div id="projet6" class="modal">
+            <div class="modal-background" onclick="closeProject('projet6')"></div>
+            <div class="modal-content box">
+                <h3 class="title">ISR2Strike Replay</h3>
+                <p>ISR-to-strike scenarios inspired by Helsing products, simulating surveillance and target engagement phases in the Gulf of Finland with visual and analytical components for defense-related research.</p>
+                <a href="https://github.com/Romain-Jaffuel/ISR2Strike-Replay" target="_blank">View full project on GitHub</a>
+            </div>
+        </div>
+    </section>
 
  <section id="contact" class="section">
         <div class="container">
