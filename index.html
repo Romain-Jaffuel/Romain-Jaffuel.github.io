@@ -88,39 +88,13 @@
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="columns is-multiline">
+                
                 <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet1')">
-                    <figure class="image is-square">
-                        <img src="Logo Syrie.png" alt="Project 1">
-                    </figure>
-                    <p class="has-text-centered">Syria Civil War Analysis</p>
-                    </div>
-                </div>
-
-                <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet2')">
-                    <figure class="image is-square">
-                        <img src="Logo UA.png" alt="Project 2">
-                    </figure>
-                    <p class="has-text-centered">Drone Classification in Ukraine</p>
-                    </div>
-                </div>
-
-                <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet3')">
-                    <figure class="image is-square">
-                        <img src="Logo Stats.png" alt="Project 3">
-                    </figure>
-                    <p class="has-text-centered">Engagement in Online Learning Platforms</p>
-                    </div>
-                </div>
-
-                <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet4')">
+                    <div class="box project-card" onclick="showProject('projet6')">
                         <figure class="image is-square">
-                            <img src="logo_snake.png" alt="Snake AI">
+                            <img src="logo_isr2strike.png" alt="ISR2Strike Replay">
                         </figure>
-                        <p class="has-text-centered">Snake AI with Reinforcement Learning</p>
+                        <p class="has-text-centered">ISR2Strike Replay</p>
                     </div>
                 </div>
 
@@ -134,81 +108,42 @@
                 </div>
 
                 <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet6')">
+                    <div class="box project-card" onclick="showProject('projet4')">
                         <figure class="image is-square">
-                            <img src="logo_isr2strike.png" alt="ISR2Strike Replay">
+                            <img src="logo_snake.png" alt="Snake AI">
                         </figure>
-                        <p class="has-text-centered">ISR2Strike Replay</p>
+                        <p class="has-text-centered">Snake AI with Reinforcement Learning</p>
                     </div>
                 </div>
-            </div>
-        </div>
+                
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet3')">
+                        <figure class="image is-square">
+                            <img src="Logo Stats.png" alt="Project 3">
+                        </figure>
+                        <p class="has-text-centered">Engagement in Online Learning Platforms</p>
+                    </div>
+                </div>
+                
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet2')">
+                        <figure class="image is-square">
+                            <img src="Logo UA.png" alt="Project 2">
+                        </figure>
+                        <p class="has-text-centered">Drone Classification in Ukraine</p>
+                    </div>
+                </div>
 
-        <div id="projet1" class="modal">
-            <div class="modal-background" onclick="closeProject('projet1')"></div>
-            <div class="modal-content box">
-            <h3 class="title">Project 1: Syria Civil War Analysis (February 2024)</h3>
-            <p>The Syrian civil war, which began in 2011, is one of the most complex conflicts of the 21st century. This project written in French explores the deep-rooted causes of the conflict, highlighting the repression of an authoritarian regime, internal power struggles, and foreign interventions. It includes a detailed analysis of key actors such as the Assad regime, rebel groups, and jihadist factions. The war’s impact on the region and international relations is central, especially regarding tensions with global powers. As Syria remains a strategic crossroads in the Middle East, this project aims to clarify the underlying dynamics that continue to destabilize the region.</p>
-            <iframe src="syrie_fiche.pdf" width="100%" height="600px"></iframe>
+                <div class="column is-one-third">
+                    <div class="box project-card" onclick="showProject('projet1')">
+                        <figure class="image is-square">
+                            <img src="Logo Syrie.png" alt="Project 1">
+                        </figure>
+                        <p class="has-text-centered">Syria Civil War Analysis</p>
+                    </div>
+                </div>
+                
             </div>
-            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet1')"></button>
-        </div>
-
-        <div id="projet2" class="modal">
-            <div class="modal-background" onclick="closeProject('projet2')"></div>
-            <div class="modal-content box">
-            <h3 class="title">Project 2: Drone Classification in Ukraine using Machine Learning (April 2024)</h3>
-            <p>In the context of modern warfare, the use of military drones in Ukraine has become a major strategic issue. This project focuses on applying machine learning to classify different types of drones, whether for reconnaissance or as attack weapons. Real-time classification enhances the ability to respond to enemy strategies. The project began with an OSINT phase to gather coordinates of Russian bases and technical specifications of drones. A Random Forest model was trained to classify 1000 simulated drone trajectories. This work contributes to the broader transformation of warfare through AI and automation. The full results are presented in the document below:</p>
-            <iframe src="ProjetUA.pdf" width="100%" height="600px"></iframe>
-            <a href="https://github.com/AEI-Andraf/Portfolio/tree/76d3b550f0b0ad7fe7d5ddfd3e9d65b82a0d0ba4/ClassificationDroneUA" target="_blank">View full project on GitHub</a>
-            </div>
-        </div>
-
-        <div id="projet3" class="modal">
-            <div class="modal-background" onclick="closeProject('projet3')"></div>
-            <div class="modal-content box">
-            <h3 class="title">Project 3: Online Learning Statistics (June 2024)</h3>
-            <p>This study analyzed learner engagement in MOOCs, focusing on the influence of sociodemographic factors like gender and Human Development Index (HDI). The goal was to identify major determinants of engagement, measured by the number of videos watched and quizzes completed. Data came from three MOOC editions, including activity logs and survey responses. The quantitative approach used t-tests and logistic regressions to evaluate main effects and interactions. Results showed a strong positive correlation between HDI and video engagement. Gender had no significant effect. These findings suggest that socio-economic context plays a larger role in learner behavior than gender, highlighting the importance of targeted interventions for underserved learners.</p>
-            <iframe src="Rendu_IMRAD_Stats.pdf" width="100%" height="600px"></iframe>
-            <a href="https://github.com/AEI-Andraf/Portfolio/tree/803b979d0c0dd7402382b366268a2de7071ff661/Statistiques%20MOOC" target="_blank">View full project on GitHub</a>
-            </div>
-        </div>
-
-        <div id="projet4" class="modal">
-            <div class="modal-background" onclick="closeProject('projet4')"></div>
-            <div class="modal-content box">
-                <h3 class="title">Project 4: Snake AI with Reinforcement Learning (July 2025)</h3>
-                <p>
-                    This project implements a Deep Q-Learning agent to play Snake autonomously. 
-                    The model is trained over multiple games and progressively improves its performance. 
-                    The video below shows an example of the agent playing after training.
-                </p>
-                <video controls width="100%">
-                    <source src="Example_Training.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <a href="https://github.com/Romain-Jaffuel/Snake-AI" target="_blank">View full project on GitHub</a>
-            </div>
-            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet4')"></button>
-        </div>
-
-<div id="projet5" class="modal">
-            <div class="modal-background" onclick="closeProject('projet5')"></div>
-            <div class="modal-content box">
-                <h3 class="title">Project 5: Military Aircraft Detection — YOLOv8 (August 2025)</h3>
-                <p>
-                    Demonstrator of military aircraft detection trained on satellite and aerial imagery,
-                    enriched with auto-labeled video frames to boost diversity. The system can recognize
-                    over 85 aircraft classes with clear gains in recall and precision, while remaining fast
-                    in inference. The video below shows a short preview of the detector at work.
-                </p>
-                <video controls width="100%">
-                    <source src="video preview YOLOv8s.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <a href="https://github.com/Romain-Jaffuel/Military-Aircraft-Detection" target="_blank">View full project on GitHub</a>
-            </div>
-            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet5')"></button>
         </div>
 
         <div id="projet6" class="modal">
@@ -230,6 +165,73 @@
             <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet6')"></button>
         </div>
     </section>
+    
+<div id="projet5" class="modal">
+            <div class="modal-background" onclick="closeProject('projet5')"></div>
+            <div class="modal-content box">
+                <h3 class="title">Project 5: Military Aircraft Detection — YOLOv8 (August 2025)</h3>
+                <p>
+                    Demonstrator of military aircraft detection trained on satellite and aerial imagery,
+                    enriched with auto-labeled video frames to boost diversity. The system can recognize
+                    over 85 aircraft classes with clear gains in recall and precision, while remaining fast
+                    in inference. The video below shows a short preview of the detector at work.
+                </p>
+                <video controls width="100%">
+                    <source src="video preview YOLOv8s.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="https://github.com/Romain-Jaffuel/Military-Aircraft-Detection" target="_blank">View full project on GitHub</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet5')"></button>
+        </div>
+    
+        <div id="projet4" class="modal">
+            <div class="modal-background" onclick="closeProject('projet4')"></div>
+            <div class="modal-content box">
+                <h3 class="title">Project 4: Snake AI with Reinforcement Learning (July 2025)</h3>
+                <p>
+                    This project implements a Deep Q-Learning agent to play Snake autonomously. 
+                    The model is trained over multiple games and progressively improves its performance. 
+                    The video below shows an example of the agent playing after training.
+                </p>
+                <video controls width="100%">
+                    <source src="Example_Training.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="https://github.com/Romain-Jaffuel/Snake-AI" target="_blank">View full project on GitHub</a>
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet4')"></button>
+        </div>
+    
+        <div id="projet3" class="modal">
+            <div class="modal-background" onclick="closeProject('projet3')"></div>
+            <div class="modal-content box">
+            <h3 class="title">Project 3: Online Learning Statistics (June 2024)</h3>
+            <p>This study analyzed learner engagement in MOOCs, focusing on the influence of sociodemographic factors like gender and Human Development Index (HDI). The goal was to identify major determinants of engagement, measured by the number of videos watched and quizzes completed. Data came from three MOOC editions, including activity logs and survey responses. The quantitative approach used t-tests and logistic regressions to evaluate main effects and interactions. Results showed a strong positive correlation between HDI and video engagement. Gender had no significant effect. These findings suggest that socio-economic context plays a larger role in learner behavior than gender, highlighting the importance of targeted interventions for underserved learners.</p>
+            <iframe src="Rendu_IMRAD_Stats.pdf" width="100%" height="600px"></iframe>
+            <a href="https://github.com/AEI-Andraf/Portfolio/tree/803b979d0c0dd7402382b366268a2de7071ff661/Statistiques%20MOOC" target="_blank">View full project on GitHub</a>
+            </div>
+        </div>
+
+        <div id="projet2" class="modal">
+            <div class="modal-background" onclick="closeProject('projet2')"></div>
+            <div class="modal-content box">
+            <h3 class="title">Project 2: Drone Classification in Ukraine using Machine Learning (April 2024)</h3>
+            <p>In the context of modern warfare, the use of military drones in Ukraine has become a major strategic issue. This project focuses on applying machine learning to classify different types of drones, whether for reconnaissance or as attack weapons. Real-time classification enhances the ability to respond to enemy strategies. The project began with an OSINT phase to gather coordinates of Russian bases and technical specifications of drones. A Random Forest model was trained to classify 1000 simulated drone trajectories. This work contributes to the broader transformation of warfare through AI and automation. The full results are presented in the document below:</p>
+            <iframe src="ProjetUA.pdf" width="100%" height="600px"></iframe>
+            <a href="https://github.com/AEI-Andraf/Portfolio/tree/76d3b550f0b0ad7fe7d5ddfd3e9d65b82a0d0ba4/ClassificationDroneUA" target="_blank">View full project on GitHub</a>
+            </div>
+        </div>
+
+            <div id="projet1" class="modal">
+            <div class="modal-background" onclick="closeProject('projet1')"></div>
+            <div class="modal-content box">
+            <h3 class="title">Project 1: Syria Civil War Analysis (February 2024)</h3>
+            <p>The Syrian civil war, which began in 2011, is one of the most complex conflicts of the 21st century. This project written in French explores the deep-rooted causes of the conflict, highlighting the repression of an authoritarian regime, internal power struggles, and foreign interventions. It includes a detailed analysis of key actors such as the Assad regime, rebel groups, and jihadist factions. The war’s impact on the region and international relations is central, especially regarding tensions with global powers. As Syria remains a strategic crossroads in the Middle East, this project aims to clarify the underlying dynamics that continue to destabilize the region.</p>
+            <iframe src="syrie_fiche.pdf" width="100%" height="600px"></iframe>
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet1')"></button>
+        </div>
 
  <section id="contact" class="section">
         <div class="container">
@@ -275,3 +277,4 @@
     </script>
 </body>
 </html>
+
