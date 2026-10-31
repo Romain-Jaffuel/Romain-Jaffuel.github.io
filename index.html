@@ -225,111 +225,239 @@
     </section>
 
 
-    <section id="projects" class="section"> 
+    <section id="projects" class="section">
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="columns is-multiline">
 
                 <div class="column is-one-third">
-                <div class="box project-card" onclick="showProject('projet10')">
-                    <figure class="image is-square is-wide-shot">
-                    <img src="assets/img/projects/russian-media-monitor/carte-influence.png" loading="lazy" alt="Russian Media Monitor — geopolitical influence map">
-                    </figure>
-                    <p class="has-text-centered">Russian Media Monitor</p>
-                </div>
-                </div>
-
-                <div class="column is-one-third">
-                <div class="box project-card" onclick="showProject('projet9')">
-                    <figure class="image is-square">
-                    <img src="assets/img/projects/election-clustering.png" loading="lazy" alt="Election clustering report">
-                    </figure>
-                    <p class="has-text-centered">Election Clustering (Legislative Systems)</p>
-                </div>
-                </div>
-
-                <div class="column is-one-third">
-                <div class="box project-card" onclick="showProject('projet8')">
-                    <figure class="image is-square">
-                    <img src="assets/img/projects/russian-propaganda.jpg" loading="lazy" alt="Russian propaganda analysis on Ukraina.ru">
-                    </figure>
-                    <p class="has-text-centered">Russian Propaganda Analysis (Ukraina.ru)</p>
-                </div>
-                </div>
-
-                <div class="column is-one-third">
-                <div class="box project-card" onclick="showProject('projet7')">
-                    <figure class="image is-square">
-                    <img src="assets/img/projects/hong-kong.jpg" loading="lazy" alt="Hong Kong 2019 protests and digital tools">
-                    </figure>
-                    <p class="has-text-centered">Hong Kong 2019 Protests &amp; Digital Space</p>
-                </div>
-                </div>
-
-                <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet6')">
+                    <div class="box project-card" data-cat="rl" onclick="showProject('projet12')">
                         <figure class="image is-square">
-                            <img src="assets/img/projects/isr2strike.png" loading="lazy" alt="Maritime Drone Patrol Simulation">
+                            <img src="assets/img/projects/baltic-submarine-isr.png" loading="lazy" alt="Baltic Submarine ISR — a fleet of autonomous underwater vehicles on patrol">
                         </figure>
-                        <p class="has-text-centered">Maritime Drone Patrol Simulation</p>
+                        <p class="project-name has-text-centered">Baltic Submarine ISR</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Reinforcement Learning</span></p>
                     </div>
                 </div>
 
                 <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet5')">
+                    <div class="box project-card" data-cat="cv" onclick="showProject('projet11')">
+                        <figure class="image is-square">
+                            <img src="assets/img/projects/kazakhstan-tanker-tracker.jpg" loading="lazy" alt="Vessel detections off Aktau on a Sentinel-1 radar pass">
+                        </figure>
+                        <p class="project-name has-text-centered">Kazakhstan Tanker Tracker</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Computer Vision</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="nlp" onclick="showProject('projet10')">
+                        <figure class="image is-square is-wide-shot">
+                            <img src="assets/img/projects/russian-media-monitor/carte-influence.png" loading="lazy" alt="Russian Media Monitor — geopolitical influence map">
+                        </figure>
+                        <p class="project-name has-text-centered">Russian Media Monitor</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">NLP</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="pol" onclick="showProject('projet9')">
+                        <figure class="image is-square">
+                            <img src="assets/img/projects/narva.jpg" loading="lazy" alt="Photomontage posted by the “Narva People's Republic” Telegram channel">
+                        </figure>
+                        <p class="project-name has-text-centered">The “Narva People's Republic”</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Political Science</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="ml" onclick="showProject('projet8')">
+                        <figure class="image is-square">
+                            <img src="assets/img/projects/election-clustering.png" loading="lazy" alt="Election clustering report">
+                        </figure>
+                        <p class="project-name has-text-centered">Election Clustering (Legislative Systems)</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Machine Learning</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="nlp" onclick="showProject('projet7')">
+                        <figure class="image is-square">
+                            <img src="assets/img/projects/russian-propaganda.jpg" loading="lazy" alt="Russian propaganda analysis on Ukraina.ru">
+                        </figure>
+                        <p class="project-name has-text-centered">Russian Propaganda Analysis (Ukraina.ru)</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">NLP</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="pol" onclick="showProject('projet6')">
+                        <figure class="image is-square">
+                            <img src="assets/img/projects/hong-kong.jpg" loading="lazy" alt="Hong Kong 2019 protests and digital tools">
+                        </figure>
+                        <p class="project-name has-text-centered">Hong Kong 2019 Protests &amp; Digital Space</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Political Science</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="cv" onclick="showProject('projet5')">
                         <figure class="image is-square">
                             <img src="assets/img/projects/aircraft-detection.png" loading="lazy" alt="Military Aircraft Detection">
                         </figure>
-                        <p class="has-text-centered">Military Aircraft Detection</p>
+                        <p class="project-name has-text-centered">Military Aircraft Detection</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Computer Vision</span></p>
                     </div>
                 </div>
 
                 <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet4')">
+                    <div class="box project-card" data-cat="rl" onclick="showProject('projet4')">
                         <figure class="image is-square">
                             <img src="assets/img/projects/snake-ai.png" loading="lazy" alt="Snake AI">
                         </figure>
-                        <p class="has-text-centered">Snake AI with Reinforcement Learning</p>
-                    </div>
-                </div>
-                
-                <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet3')">
-                        <figure class="image is-square">
-                            <img src="assets/img/projects/mooc-stats.png" loading="lazy" alt="Project 3">
-                        </figure>
-                        <p class="has-text-centered">Engagement in Online Learning Platforms</p>
-                    </div>
-                </div>
-                
-                <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet2')">
-                        <figure class="image is-square">
-                            <img src="assets/img/projects/drone-classification-ua.png" loading="lazy" alt="Project 2">
-                        </figure>
-                        <p class="has-text-centered">Drone Classification in Ukraine</p>
+                        <p class="project-name has-text-centered">Snake AI with Reinforcement Learning</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Reinforcement Learning</span></p>
                     </div>
                 </div>
 
                 <div class="column is-one-third">
-                    <div class="box project-card" onclick="showProject('projet1')">
+                    <div class="box project-card" data-cat="ml" onclick="showProject('projet3')">
+                        <figure class="image is-square">
+                            <img src="assets/img/projects/mooc-stats.png" loading="lazy" alt="Project 3">
+                        </figure>
+                        <p class="project-name has-text-centered">Engagement in Online Learning Platforms</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Machine Learning</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="ml" onclick="showProject('projet2')">
+                        <figure class="image is-square">
+                            <img src="assets/img/projects/drone-classification-ua.png" loading="lazy" alt="Project 2">
+                        </figure>
+                        <p class="project-name has-text-centered">Drone Classification in Ukraine</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Machine Learning</span></p>
+                    </div>
+                </div>
+
+                <div class="column is-one-third">
+                    <div class="box project-card" data-cat="pol" onclick="showProject('projet1')">
                         <figure class="image is-square">
                             <img src="assets/img/projects/syria.png" loading="lazy" alt="Project 1">
                         </figure>
-                        <p class="has-text-centered">Syria Civil War Analysis</p>
+                        <p class="project-name has-text-centered">Syria Civil War Analysis</p>
+                        <p class="project-tag-row has-text-centered"><span class="project-tag">Political Science</span></p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
     <!-- ===================== Project modals ===================== -->
 
+    <div id="projet12" class="modal">
+        <div class="modal-background" onclick="closeProject('projet12')"></div>
+        <div class="modal-content box">
+            <h3 class="title">Project 12: Baltic Submarine ISR (October 2026)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="rl">Reinforcement Learning</span></p>
+            <p>
+                A simulator for a fleet of fifty autonomous underwater vehicles guarding the subsea cables of the
+                Gulf of Finland. The vehicles carry only passive sonar, going fast makes them deaf, and their
+                acoustic modems reach a neighbour barely two thirds of the time, so the fleet has to share the water
+                without ever seeing the whole picture. One policy, shared by every vehicle and run on each one’s own
+                221-number observation, is trained with PPO: it learns to spread along the cable network, to stop
+                sprinting, and to converge on vessels that stop where a shipping lane crosses a cable. Against the
+                untrained network it notices 87% of suspicious manoeuvres instead of 45%, and keeps the cable picture
+                fresh 84% of the time instead of 24%. None of that coordination is written down — it follows from a
+                shared reward and a local observation. The sea floor is surveyed data; everything that moves is synthetic.
+            </p>
+
+            <div class="buttons mb-3">
+                <a class="button is-link" href="https://github.com/Romain-Jaffuel/Baltic-Submarine-ISR" target="_blank" rel="noopener">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>View full project on GitHub</span>
+                </a>
+            </div>
+
+            <figure class="project-shot">
+                <video controls preload="none" width="100%" poster="assets/img/projects/baltic-submarine-isr/poster.jpg">
+                    <source src="assets/video/baltic-submarine-isr.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Forty-eight hours of the same gulf, same traffic, same clock — the decision network before
+                training on the left, the same network after on the right. Amber marks a cable nobody has heard for six hours.</figcaption>
+            </figure>
+
+            <figure class="project-shot">
+                <img src="assets/img/projects/baltic-submarine-isr/detection-range-against-speed.png" loading="lazy"
+                     alt="Detection range and power draw plotted against speed through the water">
+                <figcaption>The constraint everything else turns on : a drone holding still hears a ship seven kilometres
+                away, one hurrying hears it at two, having spent sixty times the power to be there sooner. The step at
+                2 m/s is the propeller starting to cavitate.</figcaption>
+            </figure>
+
+            <figure class="project-shot">
+                <img src="assets/img/projects/baltic-submarine-isr/time-since-cable-last-patrolled.png" loading="lazy"
+                     alt="Cumulative share of the cable network by time since last patrolled, before and after training">
+                <figcaption>How fresh the cable picture stays. Median time since a stretch was last heard: fourteen hours
+                before training, zero after.</figcaption>
+            </figure>
+
+            <p class="project-credit">Bathymetry and coastline: EMODnet Bathymetry Consortium, Consolidated DTM for European sea regions (CC BY 4.0).</p>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet12')"></button>
+    </div>
+
+    <div id="projet11" class="modal">
+        <div class="modal-background" onclick="closeProject('projet11')"></div>
+        <div class="modal-content box">
+            <h3 class="title">Project 11: Kazakhstan Tanker Tracker (September 2026)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="cv">Computer Vision</span></p>
+            <p>
+                Detecting and sizing ships at Aktau, Kazakhstan’s oil port on the Caspian Sea, from free Sentinel-1
+                radar imagery. Radar sees through cloud and at night, so the port can be watched every week of the
+                year: a constant-false-alarm-rate detector finds vessels against the calm water — metal reflects
+                brightly where the sea does not — then measures each one’s length and heading from the shape of its
+                echo. Run over every pass since 2017, that gives a ten-year traffic series with a rhythm to it: pooled
+                over those years, the first half of each year averages 4.89 vessels per pass against 3.30 in the
+                second, 48% more. Export allocations run on calendar years and liftings tend to be front-loaded, which
+                fits the shape better than the northern Caspian freezing does, because counts stay high through May
+                and June. At 10 m per pixel a ferry and a tanker of the same size cannot be told apart, so a box reads
+                <em>tanker-size vessel</em>, never <em>tanker</em>.
+            </p>
+
+            <div class="buttons mb-3">
+                <a class="button is-link" href="https://github.com/Romain-Jaffuel/Kazakhstan-Tanker-Tracker" target="_blank" rel="noopener">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>View full project on GitHub</span>
+                </a>
+            </div>
+
+            <figure class="project-shot">
+                <img src="assets/img/projects/kazakhstan-tanker-tracker/snapshot-aktau.jpg" loading="lazy"
+                     alt="One Sentinel-1 pass over Aktau, with every detected vessel boxed and labelled">
+                <figcaption>One radar pass over Aktau, with every detection boxed and sized. The port is on the right;
+                the vessels waiting offshore are to the south-west of it.</figcaption>
+            </figure>
+
+            <figure class="project-shot">
+                <img src="assets/img/projects/kazakhstan-tanker-tracker/aktau-traffic.png" loading="lazy"
+                     alt="Vessel traffic at Aktau from 2017 to 2026, quarterly means with standard-error band">
+                <figcaption>Vessels seen per pass, 2017–2026, over 586 radar passes. The band is the standard error;
+                the recurring first-half peak is the seasonal pattern.</figcaption>
+            </figure>
+
+            <p class="project-credit">Contains modified Copernicus Sentinel data 2017–2026.</p>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet11')"></button>
+    </div>
+
     <div id="projet10" class="modal">
         <div class="modal-background" onclick="closeProject('projet10')"></div>
         <div class="modal-content box">
             <h3 class="title">Project 10: Russian Media Monitor (since August 2026)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="nlp">NLP</span></p>
             <p>
                 An automated monitoring pipeline for Russian-language media coverage of Russia. Every day it collects
                 press, Telegram channels, television programmes, YouTube channels and VKontakte communities — 55+ sources
@@ -373,13 +501,44 @@
 
     <div id="projet9" class="modal">
         <div class="modal-background" onclick="closeProject('projet9')"></div>
+        <div class="modal-content box">
+            <h3 class="title">Project 9: The “Narva People’s Republic” (May 2026)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="pol">Political Science</span></p>
+            <p>
+                Intelligence note, written in French, on the “Narva People’s Republic”, a campaign that appeared on
+                Telegram, VK and TikTok in February 2026 in north-eastern Estonia, borrowing the flag, coat of arms and
+                insignia of the people’s republics proclaimed in the Donbas in 2014. Open sources point to an organised 
+                information operation rather than a separatist project with any local footing. This note argues that the
+                effect of a low-cost operation of this kind depends more on how its targets react than on the means
+                committed. It reads its “NATO will not come” message as aimed at the credibility of NATO’s forward presence.
+            </p>
+
+            <div class="buttons mb-3">
+                <a class="button is-link" href="assets/docs/narva-peoples-republic-note.pdf" target="_blank">
+                    <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
+                    <span>Open full screen</span>
+                </a>
+                <a class="button" href="assets/docs/narva-peoples-republic-note.pdf" download>
+                    <span class="icon"><i class="fa-solid fa-download"></i></span>
+                    <span>Download PDF</span>
+                </a>
+            </div>
+
+            <iframe class="pdf-frame" data-src="assets/docs/narva-peoples-republic-note.pdf"></iframe>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet9')"></button>
+    </div>
+
+    <div id="projet8" class="modal">
+        <div class="modal-background" onclick="closeProject('projet8')"></div>
 
         <div class="modal-content box">
-            <h3 class="title">Project 9: Election Clustering – Worldwide Legislative Electoral Systems (December 2025)</h3>
+            <h3 class="title">Project 8: Election Clustering – Worldwide Legislative Electoral Systems (December 2025)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="ml">Machine Learning</span></p>
 
             <p>
             Analysis of lower-chamber legislative election results using constituency-level data (CLEA).
-            Pipeline includes preprocessing of missing codes, standard scaling, PCA, t-SNE/UMAP embeddings, 
+            Pipeline includes preprocessing of missing codes, standard scaling, PCA, t-SNE/UMAP embeddings,
             and clustering with KMeans, DBSCAN, and HDBSCAN. The report includes a focused case study on Russian elections (2003 vs 2016).
             </p>
 
@@ -397,16 +556,17 @@
             <iframe class="pdf-frame" data-src="assets/docs/election-clustering-report.pdf"></iframe>
         </div>
 
-        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet9')"></button>
+        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet8')"></button>
         </div>
 
-        <div id="projet8" class="modal">
-            <div class="modal-background" onclick="closeProject('projet8')"></div>
+        <div id="projet7" class="modal">
+            <div class="modal-background" onclick="closeProject('projet7')"></div>
             <div class="modal-content box">
-                <h3 class="title">Project 8: Russian Propaganda Narratives on Ukraina.ru (November 2025)</h3>
+                <h3 class="title">Project 7: Russian Propaganda Narratives on Ukraina.ru (November 2025)</h3>
+                <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="nlp">NLP</span></p>
                 <p>
-                Computational analysis of over 11,000 <em>Ukraina.ru</em> articles (2014–2025), combining large-scale scraping, 
-                TF–IDF modeling, TruncatedSVD, KMeans clustering and transformer-based classification to trace how Russian 
+                Computational analysis of over 11,000 <em>Ukraina.ru</em> articles (2014–2025), combining large-scale scraping,
+                TF–IDF modeling, TruncatedSVD, KMeans clustering and transformer-based classification to trace how Russian
                 state media construct, adapt, and synchronize propaganda narratives with wartime events.
                 </p>
 
@@ -432,18 +592,19 @@
             </div>
 
             <button class="modal-close is-large" aria-label="close"
-                    onclick="closeProject('projet8')"></button>
+                    onclick="closeProject('projet7')"></button>
         </div>
 
 
 
-        <div id="projet7" class="modal">
-            <div class="modal-background" onclick="closeProject('projet7')"></div>
+        <div id="projet6" class="modal">
+            <div class="modal-background" onclick="closeProject('projet6')"></div>
             <div class="modal-content box">
-                <h3 class="title">Project 7: Hong Kong 2019 Protests &amp; Digital Space (November 2025)</h3>
+                <h3 class="title">Project 6: Hong Kong 2019 Protests &amp; Digital Space (November 2025)</h3>
+                <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="pol">Political Science</span></p>
                 <p>
-                Research paper examining how Hong Kong protesters and Chinese authorities used digital platforms 
-                during the 2019 movement. Using digital space concepts, we reviewed online coordination (Telegram, LIHKG), 
+                Research paper examining how Hong Kong protesters and Chinese authorities used digital platforms
+                during the 2019 movement. Using digital space concepts, we reviewed online coordination (Telegram, LIHKG),
                 state surveillance, and the post-2020 shift toward self-censorship under the National Security Law.
                 </p>
 
@@ -468,39 +629,18 @@
         </div>
 
         <button class="modal-close is-large" aria-label="close"
-                onclick="closeProject('projet7')"></button>
+                onclick="closeProject('projet6')"></button>
         </div>
-
-
-        <div id="projet6" class="modal">
-            <div class="modal-background" onclick="closeProject('projet6')"></div>
-            <div class="modal-content box">
-                <h3 class="title">Project 6: Maritime Drone Patrol Simulation (August 2025) <br>[Still in development]</h3>
-                <p>
-                    A simulation of autonomous maritime drone patrols over dense vessel traffic in the Gulf of Finland. 
-                    It generates synthetic traffic, runs coordinated patrol patterns, scores detections, and produces human-readable 
-                    strike recommendation reports with geographic visualizations. The short video below shows a map-based overview 
-                    of detections and patrols working together to identify targets among civilian traffic.
-                </p>
-                <video controls preload="none" width="100%">
-                    <source src="assets/video/isr2strike-kepler.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <a class="button is-link is-light mt-3" href="https://github.com/Romain-Jaffuel/ISR2Strike-Replay" target="_blank">
-                    <span class="icon"><i class="fab fa-github"></i></span><span>View full project on GitHub</span>
-                </a>
-            </div>
-        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet6')"></button>
-    </div>
 
     <div id="projet5" class="modal">
         <div class="modal-background" onclick="closeProject('projet5')"></div>
         <div class="modal-content box">
             <h3 class="title">Project 5: Military Aircraft Detection — YOLOv8 (August 2025)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="cv">Computer Vision</span></p>
             <p>
                 Demonstrator of military aircraft detection trained on satellite and aerial imagery,
                 enriched with auto-labeled video frames to boost diversity. The system can recognize
-                over 85 aircraft classes with clear gains in recall and precision. 
+                over 85 aircraft classes with clear gains in recall and precision.
                 The video below shows a short preview of the detector at work on a random video.
             </p>
             <video controls preload="none" width="100%">
@@ -513,14 +653,15 @@
         </div>
         <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet5')"></button>
     </div>
-    
+
     <div id="projet4" class="modal">
         <div class="modal-background" onclick="closeProject('projet4')"></div>
         <div class="modal-content box">
             <h3 class="title">Project 4: Snake AI with Reinforcement Learning (July 2025)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="rl">Reinforcement Learning</span></p>
             <p>
-                This project implements a Deep Q-Learning agent to play Snake autonomously. 
-                The model is trained over multiple games and progressively improves its performance. 
+                This project implements a Deep Q-Learning agent to play Snake autonomously.
+                The model is trained over multiple games and progressively improves its performance.
                 The video below shows an example of the agent playing after training.
             </p>
             <video controls preload="none" width="100%">
@@ -533,11 +674,12 @@
         </div>
         <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet4')"></button>
     </div>
-    
+
     <div id="projet3" class="modal">
         <div class="modal-background" onclick="closeProject('projet3')"></div>
         <div class="modal-content box">
             <h3 class="title">Project 3: Online Learning Statistics (June 2024)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="ml">Machine Learning</span></p>
             <p>Study of learner engagement in MOOCs, focusing on sociodemographics (e.g., HDI) and their relationship with platform activity (videos watched, quizzes completed). Methods include t-tests and logistic regressions. Result: strong positive correlation between HDI and video engagement; gender not significant.</p>
             <div class="buttons mb-3">
                 <a class="button is-link" href="assets/docs/mooc-engagement-stats.pdf" target="_blank">
@@ -561,6 +703,7 @@
         <div class="modal-background" onclick="closeProject('projet2')"></div>
         <div class="modal-content box">
             <h3 class="title">Project 2: Drone Classification in Ukraine using Machine Learning (April 2024)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="ml">Machine Learning</span></p>
             <p>In the context of modern warfare, the use of military drones in Ukraine has become a major strategic issue. This project focuses on applying machine learning to classify different types of drones, whether for reconnaissance or as attack weapons. Real-time classification enhances the ability to respond to enemy strategies. The project began with an OSINT phase to gather coordinates of Russian bases and technical specifications of drones. A Random Forest model was trained to classify 1000 simulated drone trajectories. This work contributes to the broader transformation of warfare through AI and automation.</p>
             <div class="buttons mb-3">
                 <a class="button is-link" href="assets/docs/ukraine-drone-classification.pdf" target="_blank">
@@ -584,6 +727,7 @@
         <div class="modal-background" onclick="closeProject('projet1')"></div>
         <div class="modal-content box">
             <h3 class="title">Project 1: Syria Civil War Analysis (February 2024)</h3>
+            <p class="project-tag-row has-text-centered"><span class="project-tag" data-cat="pol">Political Science</span></p>
             <p>The Syrian civil war, which began in 2011, is one of the most complex conflicts of the 21st century. This project written in French explores the deep-rooted causes of the conflict, highlighting the repression of an authoritarian regime, internal power struggles, and foreign interventions. It includes a detailed analysis of key actors such as the Assad regime, rebel groups, and jihadist factions. The war’s impact on the region and international relations is central, especially regarding tensions with global powers. As Syria remains a strategic crossroads in the Middle East, this project aims to clarify the underlying dynamics that continue to destabilize the region.</p>
             <div class="buttons mb-3">
                 <a class="button is-link" href="assets/docs/syria-civil-war-analysis.pdf" target="_blank">
@@ -599,6 +743,7 @@
         </div>
         <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet1')"></button>
     </div>
+
 
     <footer id="contact" class="footer">
         <div class="content has-text-centered">
