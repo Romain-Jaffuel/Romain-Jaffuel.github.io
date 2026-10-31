@@ -418,7 +418,8 @@ footer.footer .credits > p {
   margin: 1.5rem 0 0;
 }
 
-.project-shot img {
+.project-shot img,
+.project-shot video {
   display: block;
   width: 100%;
   height: auto;
@@ -491,4 +492,58 @@ footer.footer .credits > p {
 .project-card .image.is-wide-shot img {
   object-fit: cover;
   object-position: left center;
+}
+
+/* ===== Familles de projets =====
+   Chaque carte et chaque pastille porte un data-cat ; la couleur de la
+   famille alimente a la fois le cadre de la vignette et le fond de la
+   pastille, via la variable --cat. */
+[data-cat="rl"]  { --cat: #6D28D9; }  /* apprentissage par renforcement */
+[data-cat="cv"]  { --cat: #0F766E; }  /* vision par ordinateur */
+[data-cat="nlp"] { --cat: #B45309; }  /* traitement du langage */
+[data-cat="ml"]  { --cat: #1D4ED8; }  /* apprentissage automatique */
+[data-cat="pol"] { --cat: #9D174D; }  /* science politique */
+
+.box.project-card {
+  border: 3px solid var(--cat, #005B9F);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Le nom absorbe la hauteur restante : les pastilles restent alignees en
+   bas de carte, que le titre tienne sur une ligne ou sur deux. */
+.project-card .project-name {
+  flex: 1 0 auto;
+  margin-bottom: .6rem;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: .2rem .75rem;
+  border-radius: 999px;
+  background-color: var(--cat, #005B9F);
+  color: #ffffff;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.project-tag-row {
+  margin: 0;
+}
+
+.modal-content .project-tag-row {
+  margin: 0 0 1.5rem;
+}
+
+/* Credits de donnees en pied de modale (Copernicus, EMODnet). */
+.project-credit {
+  margin-top: 1.5rem;
+  font-size: .8rem;
+  color: #64748b;
+  text-align: center;
 }
